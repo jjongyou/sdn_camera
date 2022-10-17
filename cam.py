@@ -1,0 +1,26 @@
+import cv2
+capture = cv2.VideoCapture(0)
+capture1 = cv2.VideoCapture(1)
+capture2 = cv2.VideoCapture(2)
+capture3 = cv2.VideoCapture(3)
+capture4 = cv2.VideoCapture(4)
+capture5 = cv2.VideoCapture(5)
+#capture.set(cv2.CAP_PROP_FRAME_WIDTH, 640)
+#capture.set(cv2.CAP_PROP_FRAME_HEIGHT, 480)
+
+while cv2.waitKey(33) < 0:
+    ret, frame = capture.read()
+    ret, frame1 = capture1.read()
+    ret, frame2 = capture2.read()
+    ret, frame3 = capture3.read()
+    ret, frame4 = capture4.read()
+    ret, frame5 = capture5.read()
+    cv2.imshow("VideoFrame", frame)
+    cv2.imshow("VideoFrame1", frame1)
+    cv2.imshow("VideoFrame2", frame2)
+    cv2.imshow("VideoFrame3", frame3)
+    cv2.imshow("VideoFrame4", frame4)
+    cv2.imshow("VideoFrame5", frame5)
+
+capture.release()
+cv2.destroyAllWindows()

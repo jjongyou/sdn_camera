@@ -1,0 +1,1000 @@
+ 1196  cp network_info.yaml backup_network_info.yaml 
+ 1197  vim network_info.yaml 
+ 1198  cp backup_network_info.yaml ~/py_test/network_info.yaml
+ 1199  ls
+ 1200  rm network_info.yaml 
+ 1201  ls
+ 1202  mv backup_network_info.yaml network_info.yaml 
+ 1203  clear
+ 1204  vim network_info.yaml 
+ 1205  ls
+ 1206  cp network_info.yaml ~/lg_sdn/lgryu/ryu/app/
+ 1207  cd
+ 1208  ls
+ 1209  mkdir mininet
+ 1210  cd mininet/
+ 1211  clear
+ 1212  ls
+ 1213  mkdir custom
+ 1214  cd custom/
+ 1215  touch cus.py
+ 1216  vim cus.py 
+ 1217  sudo mn --custom cus.py --topo mytopo
+ 1218  vim cus.py 
+ 1219  sudo mn
+ 1220  vim cus.py 
+ 1221  cd
+ 1222  sudo mn --custom mininet/custom/cus.py --topo mytopo
+ 1223  sudo mn --custom mininet/custom/cus.py --topo mytopo --test pingall
+ 1224  cd mininet/custom/
+ 1225  vim cus.py 
+ 1226  sudo mn --custom cus.py --topo=mytopo
+ 1227  vim cus.py 
+ 1228  sudo mn --custom cus.py --topo=mytopo
+ 1229  vim cus.py 
+ 1230  sudo mn --custom cus.py --topo=mytopo
+ 1231  vim cus.py 
+ 1232  cd
+ 1233  sudo mn --custom mininet/custom/cus.py --topo mytopo
+ 1234  sudo mn --custom mininet/custom/cus.py --topo mytopo --mac --switch ovsk --controller remote -x
+ 1235  exit
+ 1236  cd ~/py_test/
+ 1237  ls
+ 1238  vim route.py 
+ 1239  cp route.py ~/ryu/ryu/route/route.py
+ 1240  cd
+ 1241  cd ryu/ryu
+ 1242  ls
+ 1243  cd route/
+ 1244  ls
+ 1245  vim route.py 
+ 1246  cd ../app/
+ 1247  vim l3_controller.py 
+ 1248  cd
+ 1249  cd ryu/ryu/app/
+ 1250  vim l3_controller.py 
+ 1251  cp l3_controller.py ~/lg_sdn/lgryu/ryu/app/
+ 1252  vim l3_controller.py 
+ 1253  cd ../
+ 1254  cd controller/
+ 1255  ls
+ 1256  vim controller.py 
+ 1257  ll
+ 1258  grep -rn "Datapath"
+ 1259  vim controller.py 
+ 1260  exit
+ 1261  vim network_info.yaml 
+ 1262  exit
+ 1263  cd
+ 1264  cd ryu/ryu/app/
+ 1265  ls
+ 1266  cp l3_controller.py ~/lg_sdn/lgryu/ryu/app/
+ 1267  cd network_info/
+ 1268  ls
+ 1269  cp network_info.yaml ~/lg_sdn/lgryu/ryu/app/network_info/
+ 1270  cd ../
+ 1271  ls
+ 1272  vim l3_switch.py 
+ 1273  cp l3_switch.py ~/lg_sdn/lgryu/ryu/app/
+ 1274  vim l3_controller.py 
+ 1275  vim simple_switch.py 
+ 1276  exit
+ 1277  vim l3_
+ 1278  vim l3_controller.py 
+ 1279  ls
+ 1280  vim l3_controller.py 
+ 1281  cd ../
+ 1282  ls
+ 1283  cd lib/
+ 1284  ls
+ 1285  cd of_config/
+ 1286  ls
+ 1287  cd ../
+ 1288  cd lib/
+ 1289  cd netconf/
+ 1290  ls
+ 1291  vim xml.xsd 
+ 1292  vim netconf.xsd 
+ 1293  vim constants.py 
+ 1294  cd ../
+ 1295  cd app/
+ 1296  ls
+ 1297  mkdir network_info
+ 1298  mv network_info.yaml network_info/
+ 1299  vim l3_controller.py 
+ 1300  ryu-manager l3_controller.py 
+ 1301  cd
+ 1302  cd git_test_2022/
+ 1303  git log
+ 1304  ls
+ 1305  vim tt.cpp
+ 1306  git add tt.cpp 
+ 1307  git commit -m "add tt"
+ 1308  git log
+ 1309  git push origin sub
+ 1310  git log
+ 1311  git branch hh_dev
+ 1312  vim tc.cpp
+ 1313  git checkout hh_dev
+ 1314  git add tc.cpp 
+ 1315  git commit -m "add tc.cpp"
+ 1316  git push origin hh_dev
+ 1317  git log
+ 1318  ls
+ 1319  vim aa.cpp
+ 1320  git add aa.cpp 
+ 1321  git commit -m "add aa.cpp"
+ 1322  git log
+ 1323  git branch aa_dev
+ 1324  git log
+ 1325  git push origin aa_dev
+ 1326  git log
+ 1327  git checkout dev
+ 1328  git log
+ 1329  ls
+ 1330  vim tcp.cpp
+ 1331  git add tcp.cpp 
+ 1332  git commit -m "add tcp.cpp"
+ 1333  git log
+ 1334  git push origin dev
+ 1335  git log
+ 1336  git branch yjh_dev
+ 1337  git log
+ 1338  git checkout yjh_dev
+ 1339  git log
+ 1340  git push origin yjh_dev
+ 1341  git log
+ 1342  ls
+ 1343  vim udp.cpp
+ 1344  git add udp.cpp 
+ 1345  git commit -m "add udp.cpp"
+ 1346  git log
+ 1347  git push origin yjh_dev
+ 1348  git log
+ 1349  ls
+ 1350  vim test.cpp
+ 1351  git commit -am "fixed"
+ 1352  git log
+ 1353  git push origin yjh_dev
+ 1354  clear
+ 1355  git log
+ 1356  git checkout jh_dev
+ 1357  clear
+ 1358  git checkout aa_dev
+ 1359  git log
+ 1360  git checkout hh_dev
+ 1361  git push origin hh_dev
+ 1362  git log
+ 1363  git checkout aa_dev
+ 1364  ls
+ 1365  vim test2.cpp 
+ 1366  git commit -m "changed test2.cpp"
+ 1367  git commit -am "changed test2.cpp"
+ 1368  git log
+ 1369  git push origin aa_dev
+ 1370  git log
+ 1371  git checkout dev
+ 1372  git log
+ 1373  git checkout main
+ 1374  git log
+ 1375  ls
+ 1376  vim test2.cpp 
+ 1377  git commit -am "fiexed test2"
+ 1378  git log
+ 1379  cd
+ 1380  cd lg_sdn/lgryu/app
+ 1381  cd lg_sdn/lgryu/ryu/app/
+ 1382  ls
+ 1383  mkdir network_info
+ 1384  rm -rf l3_controller.py 
+ 1385  ls
+ 1386  git status
+ 1387  cd ../../
+ 1388  clear
+ 1389  ll
+ 1390  git remote -v
+ 1391  git status
+ 1392  git log
+ 1393  git add *
+ 1394  git branch jj_dev
+ 1395  ls
+ 1396  git log
+ 1397  git checkout jj_dev
+ 1398  clear
+ 1399  git log
+ 1400  git status
+ 1401  git commit -am "add l3_controller and network_info"
+ 1402  git log
+ 1403  git push origin jj_dev
+ 1404  git log
+ 1405  cd ryu/app/
+ 1406  ls
+ 1407  vim l3_controller.py 
+ 1408  cd ../../
+ 1409  git status
+ 1410  git add ryu/app/l3_switch.py 
+ 1411  git log
+ 1412  git commit -am "add l3_switch"
+ 1413  git log
+ 1414  git push origin jj_dev
+ 1415  git log
+ 1416  exit
+ 1417  ls
+ 1418  mkdir ssh_remote
+ 1419  cp set_fl.sh ssh_remote/
+ 1420  cd ssh_remote/
+ 1421  clear
+ 1422  ls
+ 1423  vim set_fl.sh 
+ 1424  mv set_fl.sh odroid1.sh
+ 1425  ls
+ 1426  cp odroid1.sh odroid2.sh 
+ 1427  cp odroid1.sh odroid3.sh 
+ 1428  cp odroid1.sh odroid4.sh 
+ 1429  clear
+ 1430  ls
+ 1431  vim odroid2.sh 
+ 1432  vim odroid3.sh 
+ 1433  vim odroid4.sh 
+ 1434  ./odroid1.sh 
+ 1435  ./odroid2.sh 
+ 1436  ./odroid3.sh 
+ 1437  ./odroid4.sh 
+ 1438  clear
+ 1439  ls
+ 1440  vim .bashrc
+ 1441  sudo grep -rn "bashrc"
+ 1442  cd llvm-p
+ 1443  clear
+ 1444  ls
+ 1445  cd llvm-pass-skeleton/
+ 1446  ls
+ 1447  git log
+ 1448  git remote -v
+ 1449  cd ..
+ 1450  cd llvm-project/
+ 1451  git remote -v
+ 1452  cd
+ 1453  cd llvm-pass-skeleton/
+ 1454  git remote origin https://github.com/jjongyou/llvm_skeleton.git
+ 1455  git remote add origin https://github.com/jjongyou/llvm_skeleton.git
+ 1456  git remote add main https://github.com/jjongyou/llvm_skeleton.git
+ 1457  ls
+ 1458  git log
+ 1459  git push main main
+ 1460  cd
+ 1461  cd llvm-project/
+ 1462  clear
+ 1463  git remote -v
+ 1464  cd
+ 1465  ls
+ 1466  rm -rf llvm-project/ llvm-pass-skeleton/
+ 1467  ls
+ 1468  cd lg_sdn/lgryu/ryu/app/
+ 1469  vim l3_controller.py 
+ 1470  cd ../../
+ 1471  git status
+ 1472  cd
+ 1473  sudo ./perf bench all
+ 1474  perf --help
+ 1475  sudo grep -rn "available_filter_functions"
+ 1476  cd /sys/
+ 1477  ls
+ 1478  cd kernel/
+ 1479  ls
+ 1480  cd debug/
+ 1481  clear
+ 1482  ll
+ 1483  sudo cd debug/
+ 1484  cd tracing/
+ 1485  ls
+ 1486  cat tracing/
+ 1487  sudo cat tracing/
+ 1488  cd
+ 1489  man ftrace
+ 1490  sudo reboot
+ 1491  cd
+ 1492  sudo mn --custom mininet/custom/cus.py --topo mytopo --mac --switch ovsk --controller remote -x
+ 1493  exit
+ 1494  ll
+ 1495  python3 server.py 
+ 1496  vim server.py 
+ 1497  python3 server.py 
+ 1498  vim server.py 
+ 1499  python3 server.py 
+ 1500  vim server.py 
+ 1501  python3 server.py 
+ 1502  vim server.py 
+ 1503  python3 server.py 
+ 1504  vim server.py 
+ 1505  python3 server.py 
+ 1506  vim server.py 
+ 1507  python3 server.py 
+ 1508  vim server.py 
+ 1509  python3 server.py 
+ 1510  cd ../../
+ 1511  cd ../
+ 1512  git log
+ 1513  git status
+ 1514  git commit -am "update l3_controller"
+ 1515  git log
+ 1516  git push jj master
+ 1517  git log
+ 1518  cd ryu/app/network_info/
+ 1519  vim network_info.yaml 
+ 1520  cd ../
+ 1521  ryu-manager --verbose l3_controller.py 
+ 1522  cd
+ 1523  ps aux | grep ovs
+ 1524  cd docker_test/
+ 1525  clear
+ 1526  ls
+ 1527  vim docker_rm.sh 
+ 1528  ls
+ 1529  cd
+ 1530  clear
+ 1531  ls
+ 1532  cd docker_test/
+ 1533  ls
+ 1534  cd ../
+ 1535  cd shared_dir/
+ 1536  ls
+ 1537  cd ../
+ 1538  cd xv6-ssu/
+ 1539  ls
+ 1540  cd
+ 1541  sudo docker imags
+ 1542  sudo docker images
+ 1543  sdu docker ps -a
+ 1544  sudo docker ps -a
+ 1545  sudo docker container ls
+ 1546  sudo docker container ls -a
+ 1547  sudo docker run -it ubuntu:latest
+ 1548  sudo docker start focal_u
+ 1549  sudo docker attach -it focal_u
+ 1550  sudo docker attach focal_u
+ 1551  clear
+ 1552  sudo purge openvswitch
+ 1553  sudo apt purge openvswitch
+ 1554  cd ../../
+ 1555  cd app/
+ 1556  ls
+ 1557  vim simple_monitor
+ 1558  vim simple_monitor.py 
+ 1559  vim l3_controller.py 
+ 1560  cd ../
+ 1561  ll
+ 1562  git remote -v
+ 1563  git log
+ 1564  git status
+ 1565  git add *
+ 1566  git status
+ 1567  git commit -am "l3_controller"
+ 1568  git log
+ 1569  git push jj master
+ 1570  cd
+ 1571  cd ryu/ryu/app/
+ 1572  vim l3_controller.py 
+ 1573  cd ryu/ryu
+ 1574  find . -name "*packet*"
+ 1575  find . -name "*generate*"
+ 1576  find . -name "*gen*"
+ 1577  cd tests/
+ 1578  clear
+ 1579  ls
+ 1580  cd packet_data_generator
+ 1581  ls
+ 1582  cd src
+ 1583  ls
+ 1584  cd ../
+ 1585  vim Makefile 
+ 1586  vim rebar.config 
+ 1587  cd src
+ 1588  ls
+ 1589  vim er.app.src 
+ 1590  vim x3.erl 
+ 1591  vim x4.erl 
+ 1592  cd ../../
+ 1593  ls
+ 1594  vim run_tests.py 
+ 1595  cd switch/
+ 1596  ls
+ 1597  vim run_mininet.py 
+ 1598  cd ../../../
+ 1599  cd ryu
+ 1600  cd ofproto/
+ 1601  ls
+ 1602  grep -rn "OFP_TCP_PORT"
+ 1603  vim ofproto_common.py 
+ 1604  ls
+ 1605  cd ../
+ 1606  ls
+ 1607  cd tests/
+ 1608  clear
+ 1609  ls
+ 1610  mkdir packet_request
+ 1611  cd packet_
+ 1612  mv packet_request/ req_to_packet
+ 1613  cd req_to_packet/
+ 1614  clear
+ 1615  ls
+ 1616  touch clinet.py
+ 1617  mv clinet.py client.py
+ 1618  vim client.py 
+ 1619  vim server.py
+ 1620  python3 client.py 
+ 1621  vim client.py 
+ 1622  python3 client.py 
+ 1623  vim client.py 
+ 1624  python3 client.py 
+ 1625  vim client.py 
+ 1626  python3 client.py 
+ 1627  vim client.py 
+ 1628  python3 client.py 
+ 1629  vim client.py 
+ 1630  python3 client.py 
+ 1631  vim client.py 
+ 1632  vim server.py 
+ 1633  cp client.py ~/lg_sdn/lgryu/ryu/tests/req_to_packet/
+ 1634  cd
+ 1635  cd py_test/
+ 1636  clear
+ 1637  ls
+ 1638  cd test/
+ 1639  clear
+ 1640  ls
+ 1641  vim list_sum.py
+ 1642  python3 list_sum.py 
+ 1643  vim list_sum.py
+ 1644  python3 list_sum.py 
+ 1645  vim list_sum.py
+ 1646  python3 list_sum.py 
+ 1647  ifconfig
+ 1648  cd
+ 1649  ./dump_flow.sh 13
+ 1650  ./dump_flow.sh 13 cen
+ 1651  vim dump_flow.sh 
+ 1652  ./dump_flow.sh 13 z_cen
+ 1653  sudo ovs-vsctl show
+ 1654  ifconfig
+ 1655  ls
+ 1656  cd ssh_remote/
+ 1657  clear
+ 1658  ll
+ 1659  ./odroid1.sh 
+ 1660  cd
+ 1661  ssh root@191.168.0.4
+ 1662  ssh root@192.168.0.4
+ 1663  ssh-keygen -f "/home/jjong/.ssh/known_hosts" -R "192.168.0.4"
+ 1664  cd ssh_remote/
+ 1665  ./odroid1.sh 
+ 1666  ls
+ 1667  ./odroid2.sh 
+ 1668  cd
+ 1669  ssh-keygen -f "/home/jjong/.ssh/known_hosts" -R "192.168.0.5"
+ 1670  cd ssh_remote/
+ 1671  ./odroid2.sh 
+ 1672  ./odroid3.sh 
+ 1673  cd
+ 1674  ssh-keygen -f "/home/jjong/.ssh/known_hosts" -R "192.168.0.7"
+ 1675  cd ssh_remote/
+ 1676  ./odroid3.sh 
+ 1677  ./odroid4.sh 
+ 1678  cd ..
+ 1679  ssh-keygen -f "/home/jjong/.ssh/known_hosts" -R "192.168.0.8"
+ 1680  cd ssh_remote/
+ 1681  ./odroid4.sh 
+ 1682  find . -name "*token*"
+ 1683  cd lg_sdn/
+ 1684  ls
+ 1685  cd lgryu/
+ 1686  ls
+ 1687  cd ryu/
+ 1688  ls
+ 1689  cd tests/
+ 1690  ls
+ 1691  clear
+ 1692  ll
+ 1693  mkdir req_to_packet
+ 1694  cd req_to_packet/
+ 1695  ls
+ 1696  vim client.py 
+ 1697  cd ../../
+ 1698  cd app/
+ 1699  ls
+ 1700  vim l3_controller.py 
+ 1701  diff l3_controller.py ~/ryu/ryu/app/l3_controller.py 
+ 1702  vim l3_controller.py 
+ 1703  diff l3_controller.py ~/ryu/ryu/app/l3_controller.py 
+ 1704  vim l3_controller.py 
+ 1705  cd ../../
+ 1706  git status
+ 1707  git add *
+ 1708  git log
+ 1709  git commit -am "add req_thread in l3_controller & request test file in tests dir"
+ 1710  git log
+ 1711  history
+ 1712  git log
+ 1713  git remote -v
+ 1714  git push origin jj_dev
+ 1715  git log
+ 1716  cd ryu/app/
+ 1717  vim l3_controller.py 
+ 1718  cd ../../
+ 1719  git log
+ 1720  git status
+ 1721  git add ryu/app/l3_controller.py 
+ 1722  git commit -am "minor update"
+ 1723  git log
+ 1724  git push origin jj_dev
+ 1725  git log
+ 1726  clear
+ 1727  ls
+ 1728  cd lg_sdn/lgryu/ryu/app/
+ 1729  vim l3_controller.py 
+ 1730  exit
+ 1731  cd
+ 1732  clear
+ 1733  sudo mn --custom mininet/custom/cus.py --topo mytopo --mac --switch ovsk --controller remote -x
+ 1734  ifconfig
+ 1735  cd /media/boo
+ 1736  cd /media/boot
+ 1737  vim /media/boot/boot.ini
+ 1738  cd ssh_remote/
+ 1739  clear
+ 1740  ls
+ 1741  ./odroid1.sh 
+ 1742  clear
+ 1743  cd
+ 1744  cd /etc/udev/rules.d/
+ 1745  clera
+ 1746  clear
+ 1747  ls
+ 1748  vim 70-persistent-net.rules 
+ 1749  ls
+ 1750  sudo rm -f 70-persistent-net.rules 
+ 1751  ls
+ 1752  cd
+ 1753  cd /etc/default/
+ 1754  vim grub
+ 1755  sudo vim grub
+ 1756  cd
+ 1757  cd /etc/sysconfig
+ 1758  cd /etc/
+ 1759  ls
+ 1760  clear
+ 1761  ls | grep sysconfig
+ 1762  ls | grep sys
+ 1763  cd ../../app/network_info/
+ 1764  vim network_info.yaml 
+ 1765  cd ryu/ryu
+ 1766  cd ofproto/
+ 1767  ls
+ 1768  vim ofproto_v1_3_parser.py 
+ 1769  dc ../
+ 1770  cd ../app/
+ 1771  vim l3_controller.py 
+ 1772  cd ../tests/
+ 1773  clear
+ 1774  ls
+ 1775  cd req_to_packet/
+ 1776  clear
+ 1777  pwd
+ 1778  ls
+ 1779  cd ../../app/
+ 1780  vim l3_controller.py 
+ 1781  cd
+ 1782  cd lg_sdn/lgryu/
+ 1783  cd ryu/app/
+ 1784  clear
+ 1785  ls
+ 1786  vim l3_controller.py 
+ 1787  sudo reboot
+ 1788  roscore
+ 1789  cs
+ 1790  ls
+ 1791  ifconfig
+ 1792  cd ryu/ryu/app/
+ 1793  vim l3_controller.py 
+ 1794  cd
+ 1795  cd py_test/
+ 1796  clear
+ 1797  cd test/
+ 1798  ls
+ 1799  vim static.py
+ 1800  python3 static.py 
+ 1801  vim static.py
+ 1802  python3 static.py 
+ 1803  vim static.py
+ 1804  cd
+ 1805  cd ssh_remote/
+ 1806  ./odroid1.sh 
+ 1807  ./odroid2.sh 
+ 1808  ./odroid3.sh 
+ 1809  ./odroid4.sh 
+ 1810  ./odroid2.sh 
+ 1811  ./odroid1.sh 
+ 1812  ./odroid2.sh 
+ 1813  ./odroid3.sh 
+ 1814  ls
+ 1815  ifconfig
+ 1816  sudo docker container ls -a
+ 1817  sudo docker start focal_u
+ 1818  sudo docker attach focal_u
+ 1819  clear
+ 1820  ifconfig
+ 1821  sudo docker container ls -a
+ 1822  sudo docker ps -a
+ 1823  sudo find . -name "*boot.ini*"
+ 1824  sudo reboot
+ 1825  ./odroid4.sh 
+ 1826  exit
+ 1827  ./odroid3.sh 
+ 1828  exit
+ 1829  ifconfig
+ 1830  ls
+ 1831  cd ssh_remote/
+ 1832  clear
+ 1833  ls
+ 1834  cp odroid4.sh odroid5.sh
+ 1835  vim odroid5.sh 
+ 1836  ./odroid5.sh 
+ 1837  clear
+ 1838  ./odroid1.sh 
+ 1839  ./odroid2.sh 
+ 1840  ./odroid3.sh 
+ 1841  ./odroid2.sh 
+ 1842  ./odroid1.sh 
+ 1843  ./odroid3.sh 
+ 1844  ./odroid1.sh 
+ 1845  ./odroid2.sh 
+ 1846  ./odroid1.sh 
+ 1847  ./odroid2.sh 
+ 1848  ./odroid3.sh 
+ 1849  cd
+ 1850  vim set_fr.sh 
+ 1851  cd ryu/ryu/app/network_info/
+ 1852  vim network_info.yaml 
+ 1853  cd
+ 1854  cd lg_sdn/
+ 1855  ls
+ 1856  cd lgryu/
+ 1857  cd ryu/app/
+ 1858  vim l3_controller.py 
+ 1859  cd ../../
+ 1860  git log
+ 1861  git status
+ 1862  git commit -am "fixed select_path"
+ 1863  git push origin jj_dev
+ 1864  git log
+ 1865  cd ryu/app/
+ 1866  vim l3_controller.py 
+ 1867  exit
+ 1868  cd
+ 1869  cd py_test/
+ 1870  ls
+ 1871  cd test/
+ 1872  ls
+ 1873  vim static.py 
+ 1874  cd
+ 1875  cd ryu/
+ 1876  git log
+ 1877  git status
+ 1878  git commit -am "fixed function code"
+ 1879  git log
+ 1880  git push jj master
+ 1881  git log
+ 1882  cd
+ 1883  cd lg_sdn/
+ 1884  cd lgryu/
+ 1885  clear
+ 1886  git status
+ 1887  git log
+ 1888  git commit -am "remove match_field-in_port"
+ 1889  git log
+ 1890  git push origin jj_dev
+ 1891  git log
+ 1892  cd ryu/tests/req_to_packet/
+ 1893  vim client.py 
+ 1894  exit
+ 1895  cd
+ 1896  cd py_test/
+ 1897  ls
+ 1898  cd test
+ 1899  ls
+ 1900  vim overload.py
+ 1901  python3 overload.py 
+ 1902  vim overload.py
+ 1903  python3 overload.py 
+ 1904  vim overload.py
+ 1905  python3 overload.py 
+ 1906  vim overload.py
+ 1907  python3 overload.py 
+ 1908  vim overload.py
+ 1909  python3 overload.py 
+ 1910  vim overload.py
+ 1911  python3 overload.py 
+ 1912  vim overload.py
+ 1913  python3 overload.py 
+ 1914  vim overload.py
+ 1915  python3 overload.py 
+ 1916  vim overload.py
+ 1917  python3 overload.py 
+ 1918  vim overload.py
+ 1919  python3 overload.py 
+ 1920  vim overload.py
+ 1921  python3 overload.py 
+ 1922  vim overload.py
+ 1923  python3 overload.py 
+ 1924  vim overload.py
+ 1925  exit
+ 1926  cd ssh_remote/
+ 1927  ./odroid1.sh 
+ 1928  ./odroid2.sh 
+ 1929  cd
+ 1930  lsusb
+ 1931  ls -ltrh /dev/video*
+ 1932  cd ssh_remote/
+ 1933  ls
+ 1934  ./odroid5.sh 
+ 1935  cd c++_progream/
+ 1936  g++ cam.cpp -o cam
+ 1937  python3
+ 1938  cd
+ 1939  cd py_test/test/
+ 1940  clear
+ 1941  ls
+ 1942  vim cam.py
+ 1943  python3 cam.py 
+ 1944  vim cam.py
+ 1945  python3 cam.py 
+ 1946  uname -r
+ 1947  cd
+ 1948  sudo apt upgrade
+ 1949  apt update
+ 1950  sudo apt update
+ 1951  ls -ltrh /dev/video*
+ 1952  sudo apt-get install v4l-utils -y 
+ 1953  v4l2-ctl --list-devices
+ 1954  git clone https://github.com/Microsoft/vcpkg.git
+ 1955  cd vcpkg/
+ 1956  ./bootstrap-vcpkg.sh
+ 1957  ./vcpkg integrate install
+ 1958  ./vcpkg install realsense2
+ 1959  cd
+ 1960  cd c++_progream/
+ 1961  vim realsense.c
+ 1962  mkdir realsencse
+ 1963  mv realsense.c realsencse/
+ 1964  cd realsencse/
+ 1965  ls
+ 1966  vim CMakeLists.txt
+ 1967  make
+ 1968  colcon build
+ 1969  ls
+ 1970  mv realsense.c rs_distance.c
+ 1971  colcon build
+ 1972  vim CMakeLists.txt 
+ 1973  gcc rs_distance.c -o rs
+ 1974  vim CMakeLists.txt 
+ 1975  cd
+ 1976  ls
+ 1977  cd vcpkg/
+ 1978  clear
+ 1979  ls
+ 1980  find . -name "*example"
+ 1981  find . -name "*Example"
+ 1982  find . -name "*Example*"
+ 1983  cd
+ 1984  cd vcpkg/
+ 1985  clear
+ 1986  ls
+ 1987  cd
+ 1988  git clone https://github.com/IntelRealSense/librealsense.git
+ 1989  cd ssh_remote/
+ 1990  ls
+ 1991  ./odroid1.sh 
+ 1992  ./odroid2.sh 
+ 1993  ./odroid3.sh 
+ 1994  ovs-vsctl list bridge
+ 1995  ./odroid3.sh 
+ 1996  cd
+ 1997  cd ssh_remote/
+ 1998  ./odroid1.sh 
+ 1999  cd ../
+ 2000  cd config/
+ 2001  ls
+ 2002  cd /etc/udev/rules.d/
+ 2003  ls
+ 2004  cd ~/librealsense/config/
+ 2005  cp 99-realsense-libusb.rules /etc/udev/rules.d/
+ 2006  sudo cp 99-realsense-libusb.rules /etc/udev/rules.d/
+ 2007  cd /etc/udev/rules.d/
+ 2008  ls
+ 2009  cd
+ 2010  cd librealsense/
+ 2011  ls
+ 2012  cd examples/
+ 2013  ls
+ 2014  cd capture/
+ 2015  ls
+ 2016  vim rs-capture.cpp 
+ 2017  cd
+ 2018  pip install opencv-python
+ 2019  pip install pyrealsense2
+ 2020  cd py_test/
+ 2021  ls
+ 2022  python yaml_reader.py 
+ 2023  cd test
+ 2024  vim depth.py
+ 2025  python depth.py 
+ 2026  python3 depth.py 
+ 2027  vim depth.py 
+ 2028  python3 depth.py 
+ 2029  vim depth.py 
+ 2030  python3 depth.py 
+ 2031  vim depth.py 
+ 2032  vim rs.py
+ 2033  python3 rs.py 
+ 2034  vim rs.py 
+ 2035  python3 rs.py 
+ 2036  vim rs.py 
+ 2037  python3 rs.py 
+ 2038  vim rs.py 
+ 2039  python3 rs.py 
+ 2040  vim rs.py 
+ 2041  cp rs.py depth_rs.py
+ 2042  vim depth_rs.py 
+ 2043  python3 depth_rs.py 
+ 2044  vim depth_rs.py 
+ 2045  python3 depth_rs.py 
+ 2046  vim depth_rs.py depth_test.py
+ 2047  ls
+ 2048  cp depth_rs.py depth_test.py
+ 2049  vim depth_test.py 
+ 2050  python3 depth_test.py 
+ 2051  vim depth_test.py 
+ 2052  clear
+ 2053  ll
+ 2054  vim real_depth.py
+ 2055  python3 real_depth.py 
+ 2056  vim real_depth.py 
+ 2057  python3 real_depth.py 
+ 2058  d
+ 2059  vim real_depth.py 
+ 2060  python3 real_depth.py 
+ 2061  vim real_depth.py 
+ 2062  python3 real_depth.py 
+ 2063  vim real_depth.py 
+ 2064  python3 real_depth.py 
+ 2065  vim real_depth.py 
+ 2066  python3 real_depth.py 
+ 2067  vim real_depth.py 
+ 2068  python3 real_depth.py 
+ 2069  vim real_depth.py 
+ 2070  python3 real_depth.py 
+ 2071  vim real_depth.py 
+ 2072  cd
+ 2073  pip install realsense_depth
+ 2074  find . -name "*realsense_depth*"
+ 2075  cd py_test/test/
+ 2076  python3 real_depth.py 
+ 2077  vim real_depth.py 
+ 2078  python3 real_depth.py 
+ 2079  vim real_depth.py 
+ 2080  cp real_depth.py real_color.py
+ 2081  vim real_color.py 
+ 2082  python3 real_color.py 
+ 2083  vim real_
+ 2084  vim real_color.py 
+ 2085  vim real_
+ 2086  vim real_color.py 
+ 2087  python3 real_color.py 
+ 2088  vim real_color.py 
+ 2089  python3 real_color.py 
+ 2090  vim real_color.py 
+ 2091  python3 real_color.py 
+ 2092  vim real_color.py 
+ 2093  python3 real_color.py 
+ 2094  cd
+ 2095  cd py_test/test/
+ 2096  ls
+ 2097  clear
+ 2098  ll
+ 2099  vim client.py 
+ 2100  vim real_color.py 
+ 2101  cp real_color.py client_color.py
+ 2102  vim real_color.py 
+ 2103  vim client_color.py 
+ 2104  cp real_color.py server_color.py
+ 2105  vim server_color.py 
+ 2106  python3 client_color.py 
+ 2107  vim client.py 
+ 2108  vim client_color.py 
+ 2109  python3 client_color.py 
+ 2110  vim client_color.py 
+ 2111  python3 client_color.py 
+ 2112  vim client_color.py 
+ 2113  python3 client_color.py 
+ 2114  vim client_color.py 
+ 2115  cp client_color.py beta_client_color.py
+ 2116  vim beta_client_color.py 
+ 2117  rm -rf beta_client_color.py 
+ 2118  vim client_color.py 
+ 2119  python3 client_color.py 
+ 2120  vim client_color.py 
+ 2121  python3 client_color.py 
+ 2122  vim client_color.py 
+ 2123  python3 client_color.py 
+ 2124  vim client_color.py 
+ 2125  python3 client_color.py 
+ 2126  vim client_color.py 
+ 2127  python3 client_color.py 
+ 2128  vim client_color.py 
+ 2129  python3 client_color.py 
+ 2130  vim client_color.py 
+ 2131  python3 client_color.py 
+ 2132  vim client_color.py 
+ 2133  python3 client_color.py 
+ 2134  vim real_color.py 
+ 2135  python3 real_color.py 
+ 2136  vim real_color.py 
+ 2137  python3 real_color.py 
+ 2138  vim real_color.py 
+ 2139  python3 client_color.py 
+ 2140  vim real_color.py 
+ 2141  python3 client_color.py 
+ 2142  vim real_color.py 
+ 2143  vim client_color.py 
+ 2144  python3 client_color.py 
+ 2145  vim client_color.py 
+ 2146  python3 client_color.py 
+ 2147  vim client_color.py 
+ 2148  python3 client_color.py 
+ 2149  vim client_color.py 
+ 2150  python3 client_color.py 
+ 2151  vim client_color.py 
+ 2152  python3 client_color.py 
+ 2153  vim client_color.py 
+ 2154  python3 client_color.py 
+ 2155  vim client_color.py 
+ 2156  python3 client_color.py 
+ 2157  vim client_color.py 
+ 2158  python3 client_color.py 
+ 2159  vim client_color.py 
+ 2160  python3 client_color.py 
+ 2161  vim client_color.py 
+ 2162  python3 client_color.py 
+ 2163  vim client_color.py 
+ 2164  python3 client_color.py 
+ 2165  vim client_color.py 
+ 2166  python3 client_color.py 
+ 2167  vim client_color.py 
+ 2168  python3 client_color.py 
+ 2169  vim client_color.py 
+ 2170  python3 client_color.py 
+ 2171  vim client_color.py 
+ 2172  python3 client_color.py 
+ 2173  vim client_color.py 
+ 2174  cd ..
+ 2175  git init
+ 2176  git log
+ 2177  git add *
+ 2178  git commit "python test"
+ 2179  git commit -m "python test"
+ 2180  git log
+ 2181  cd test/
+ 2182  ls
+ 2183  vim client_color.py 
+ 2184  cd ../
+ 2185  git commit -am "remove transmit thread"
+ 2186  git log
+ 2187  cd test/
+ 2188  ls
+ 2189  python3 client_color.py 
+ 2190  vim client_color.py 
+ 2191  python3 client_color.py 
+ 2192  history
+ 2193  vim py_history.txt
+ 2194  touch py_history.txt
+ 2195  history > py_history.txt 

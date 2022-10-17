@@ -1,0 +1,11 @@
+# install command
+sudo apt-get install pip
+pip install opencv-python
+pip install pyrealsense2
+pip install numpy
+
+
+======================
+# How to install opencv python in Odroid XU4
+
+sudo apt install libopencv-dev python3-opencv

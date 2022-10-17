@@ -1,0 +1,1000 @@
+ 1035  ls
+ 1036  cd test/
+ 1037  clear
+ 1038  ls
+ 1039  vim list_sum.py
+ 1040  python3 list_sum.py 
+ 1041  vim list_sum.py
+ 1042  python3 list_sum.py 
+ 1043  vim list_sum.py
+ 1044  python3 list_sum.py 
+ 1045  ifconfig
+ 1046  cd
+ 1047  ./dump_flow.sh 13
+ 1048  ./dump_flow.sh 13 cen
+ 1049  vim dump_flow.sh 
+ 1050  ./dump_flow.sh 13 z_cen
+ 1051  sudo ovs-vsctl show
+ 1052  ifconfig
+ 1053  ls
+ 1054  cd ssh_remote/
+ 1055  clear
+ 1056  ll
+ 1057  ./odroid1.sh 
+ 1058  cd
+ 1059  ssh root@191.168.0.4
+ 1060  ssh root@192.168.0.4
+ 1061  ssh-keygen -f "/home/jjong/.ssh/known_hosts" -R "192.168.0.4"
+ 1062  cd ssh_remote/
+ 1063  ./odroid1.sh 
+ 1064  ls
+ 1065  ./odroid2.sh 
+ 1066  cd
+ 1067  ssh-keygen -f "/home/jjong/.ssh/known_hosts" -R "192.168.0.5"
+ 1068  cd ssh_remote/
+ 1069  ./odroid2.sh 
+ 1070  ./odroid3.sh 
+ 1071  cd
+ 1072  ssh-keygen -f "/home/jjong/.ssh/known_hosts" -R "192.168.0.7"
+ 1073  cd ssh_remote/
+ 1074  ./odroid3.sh 
+ 1075  ./odroid4.sh 
+ 1076  cd ..
+ 1077  ssh-keygen -f "/home/jjong/.ssh/known_hosts" -R "192.168.0.8"
+ 1078  cd ssh_remote/
+ 1079  ./odroid4.sh 
+ 1080  find . -name "*token*"
+ 1081  cd lg_sdn/
+ 1082  ls
+ 1083  cd lgryu/
+ 1084  ls
+ 1085  cd ryu/
+ 1086  ls
+ 1087  cd tests/
+ 1088  ls
+ 1089  clear
+ 1090  ll
+ 1091  mkdir req_to_packet
+ 1092  cd req_to_packet/
+ 1093  ls
+ 1094  vim client.py 
+ 1095  cd ../../
+ 1096  cd app/
+ 1097  ls
+ 1098  vim l3_controller.py 
+ 1099  diff l3_controller.py ~/ryu/ryu/app/l3_controller.py 
+ 1100  vim l3_controller.py 
+ 1101  diff l3_controller.py ~/ryu/ryu/app/l3_controller.py 
+ 1102  vim l3_controller.py 
+ 1103  cd ../../
+ 1104  git status
+ 1105  git add *
+ 1106  git log
+ 1107  git commit -am "add req_thread in l3_controller & request test file in tests dir"
+ 1108  git log
+ 1109  history
+ 1110  git log
+ 1111  git remote -v
+ 1112  git push origin jj_dev
+ 1113  git log
+ 1114  cd ryu/app/
+ 1115  vim l3_controller.py 
+ 1116  cd ../../
+ 1117  git log
+ 1118  git status
+ 1119  git add ryu/app/l3_controller.py 
+ 1120  git commit -am "minor update"
+ 1121  git log
+ 1122  git push origin jj_dev
+ 1123  git log
+ 1124  clear
+ 1125  ls
+ 1126  cd lg_sdn/lgryu/ryu/app/
+ 1127  vim l3_controller.py 
+ 1128  exit
+ 1129  cd
+ 1130  clear
+ 1131  sudo mn --custom mininet/custom/cus.py --topo mytopo --mac --switch ovsk --controller remote -x
+ 1132  ifconfig
+ 1133  cd /media/boo
+ 1134  cd /media/boot
+ 1135  vim /media/boot/boot.ini
+ 1136  cd ssh_remote/
+ 1137  clear
+ 1138  ls
+ 1139  ./odroid1.sh 
+ 1140  clear
+ 1141  cd
+ 1142  cd /etc/udev/rules.d/
+ 1143  clera
+ 1144  clear
+ 1145  ls
+ 1146  vim 70-persistent-net.rules 
+ 1147  ls
+ 1148  sudo rm -f 70-persistent-net.rules 
+ 1149  ls
+ 1150  cd
+ 1151  cd /etc/default/
+ 1152  vim grub
+ 1153  sudo vim grub
+ 1154  cd
+ 1155  cd /etc/sysconfig
+ 1156  cd /etc/
+ 1157  ls
+ 1158  clear
+ 1159  ls | grep sysconfig
+ 1160  ls | grep sys
+ 1161  cd ../../app/network_info/
+ 1162  vim network_info.yaml 
+ 1163  cd ryu/ryu
+ 1164  cd ofproto/
+ 1165  ls
+ 1166  vim ofproto_v1_3_parser.py 
+ 1167  dc ../
+ 1168  cd ../app/
+ 1169  vim l3_controller.py 
+ 1170  cd ../tests/
+ 1171  clear
+ 1172  ls
+ 1173  cd req_to_packet/
+ 1174  clear
+ 1175  pwd
+ 1176  ls
+ 1177  cd ../../app/
+ 1178  vim l3_controller.py 
+ 1179  cd
+ 1180  cd lg_sdn/lgryu/
+ 1181  cd ryu/app/
+ 1182  clear
+ 1183  ls
+ 1184  vim l3_controller.py 
+ 1185  sudo reboot
+ 1186  roscore
+ 1187  cs
+ 1188  ls
+ 1189  ifconfig
+ 1190  cd ryu/ryu/app/
+ 1191  vim l3_controller.py 
+ 1192  cd
+ 1193  cd py_test/
+ 1194  clear
+ 1195  cd test/
+ 1196  ls
+ 1197  vim static.py
+ 1198  python3 static.py 
+ 1199  vim static.py
+ 1200  python3 static.py 
+ 1201  vim static.py
+ 1202  cd
+ 1203  cd ssh_remote/
+ 1204  ./odroid1.sh 
+ 1205  ./odroid2.sh 
+ 1206  ./odroid3.sh 
+ 1207  ./odroid4.sh 
+ 1208  ./odroid2.sh 
+ 1209  ./odroid1.sh 
+ 1210  ./odroid2.sh 
+ 1211  ./odroid3.sh 
+ 1212  ls
+ 1213  ifconfig
+ 1214  sudo docker container ls -a
+ 1215  sudo docker start focal_u
+ 1216  sudo docker attach focal_u
+ 1217  clear
+ 1218  ifconfig
+ 1219  sudo docker container ls -a
+ 1220  sudo docker ps -a
+ 1221  sudo find . -name "*boot.ini*"
+ 1222  sudo reboot
+ 1223  ./odroid4.sh 
+ 1224  exit
+ 1225  ./odroid3.sh 
+ 1226  exit
+ 1227  ifconfig
+ 1228  ls
+ 1229  cd ssh_remote/
+ 1230  clear
+ 1231  ls
+ 1232  cp odroid4.sh odroid5.sh
+ 1233  vim odroid5.sh 
+ 1234  ./odroid5.sh 
+ 1235  clear
+ 1236  ./odroid1.sh 
+ 1237  ./odroid2.sh 
+ 1238  ./odroid3.sh 
+ 1239  ./odroid2.sh 
+ 1240  ./odroid1.sh 
+ 1241  ./odroid3.sh 
+ 1242  ./odroid1.sh 
+ 1243  ./odroid2.sh 
+ 1244  ./odroid1.sh 
+ 1245  ./odroid2.sh 
+ 1246  ./odroid3.sh 
+ 1247  cd
+ 1248  vim set_fr.sh 
+ 1249  cd ryu/ryu/app/network_info/
+ 1250  vim network_info.yaml 
+ 1251  cd
+ 1252  cd lg_sdn/
+ 1253  ls
+ 1254  cd lgryu/
+ 1255  cd ryu/app/
+ 1256  vim l3_controller.py 
+ 1257  cd ../../
+ 1258  git log
+ 1259  git status
+ 1260  git commit -am "fixed select_path"
+ 1261  git push origin jj_dev
+ 1262  git log
+ 1263  cd ryu/app/
+ 1264  vim l3_controller.py 
+ 1265  exit
+ 1266  cd
+ 1267  cd py_test/
+ 1268  ls
+ 1269  cd test/
+ 1270  ls
+ 1271  vim static.py 
+ 1272  cd
+ 1273  cd ryu/
+ 1274  git log
+ 1275  git status
+ 1276  git commit -am "fixed function code"
+ 1277  git log
+ 1278  git push jj master
+ 1279  git log
+ 1280  cd
+ 1281  cd lg_sdn/
+ 1282  cd lgryu/
+ 1283  clear
+ 1284  git status
+ 1285  git log
+ 1286  git commit -am "remove match_field-in_port"
+ 1287  git log
+ 1288  git push origin jj_dev
+ 1289  git log
+ 1290  cd ryu/tests/req_to_packet/
+ 1291  vim client.py 
+ 1292  exit
+ 1293  cd
+ 1294  cd py_test/
+ 1295  ls
+ 1296  cd test
+ 1297  ls
+ 1298  vim overload.py
+ 1299  python3 overload.py 
+ 1300  vim overload.py
+ 1301  python3 overload.py 
+ 1302  vim overload.py
+ 1303  python3 overload.py 
+ 1304  vim overload.py
+ 1305  python3 overload.py 
+ 1306  vim overload.py
+ 1307  python3 overload.py 
+ 1308  vim overload.py
+ 1309  python3 overload.py 
+ 1310  vim overload.py
+ 1311  python3 overload.py 
+ 1312  vim overload.py
+ 1313  python3 overload.py 
+ 1314  vim overload.py
+ 1315  python3 overload.py 
+ 1316  vim overload.py
+ 1317  python3 overload.py 
+ 1318  vim overload.py
+ 1319  python3 overload.py 
+ 1320  vim overload.py
+ 1321  python3 overload.py 
+ 1322  vim overload.py
+ 1323  exit
+ 1324  cd ssh_remote/
+ 1325  ./odroid1.sh 
+ 1326  ./odroid2.sh 
+ 1327  cd
+ 1328  lsusb
+ 1329  ls -ltrh /dev/video*
+ 1330  cd ssh_remote/
+ 1331  ls
+ 1332  ./odroid5.sh 
+ 1333  cd c++_progream/
+ 1334  g++ cam.cpp -o cam
+ 1335  python3
+ 1336  cd
+ 1337  cd py_test/test/
+ 1338  clear
+ 1339  ls
+ 1340  vim cam.py
+ 1341  python3 cam.py 
+ 1342  vim cam.py
+ 1343  python3 cam.py 
+ 1344  uname -r
+ 1345  cd
+ 1346  sudo apt upgrade
+ 1347  apt update
+ 1348  sudo apt update
+ 1349  ls -ltrh /dev/video*
+ 1350  sudo apt-get install v4l-utils -y 
+ 1351  v4l2-ctl --list-devices
+ 1352  git clone https://github.com/Microsoft/vcpkg.git
+ 1353  cd vcpkg/
+ 1354  ./bootstrap-vcpkg.sh
+ 1355  ./vcpkg integrate install
+ 1356  ./vcpkg install realsense2
+ 1357  cd
+ 1358  cd c++_progream/
+ 1359  vim realsense.c
+ 1360  mkdir realsencse
+ 1361  mv realsense.c realsencse/
+ 1362  cd realsencse/
+ 1363  ls
+ 1364  vim CMakeLists.txt
+ 1365  make
+ 1366  colcon build
+ 1367  ls
+ 1368  mv realsense.c rs_distance.c
+ 1369  colcon build
+ 1370  vim CMakeLists.txt 
+ 1371  gcc rs_distance.c -o rs
+ 1372  vim CMakeLists.txt 
+ 1373  cd
+ 1374  ls
+ 1375  cd vcpkg/
+ 1376  clear
+ 1377  ls
+ 1378  find . -name "*example"
+ 1379  find . -name "*Example"
+ 1380  find . -name "*Example*"
+ 1381  cd
+ 1382  cd vcpkg/
+ 1383  clear
+ 1384  ls
+ 1385  cd
+ 1386  git clone https://github.com/IntelRealSense/librealsense.git
+ 1387  cd ssh_remote/
+ 1388  ls
+ 1389  ./odroid1.sh 
+ 1390  ./odroid2.sh 
+ 1391  ./odroid3.sh 
+ 1392  ovs-vsctl list bridge
+ 1393  ./odroid3.sh 
+ 1394  cd
+ 1395  cd ssh_remote/
+ 1396  ./odroid1.sh 
+ 1397  sudo apt update
+ 1398  sudo apt-get update
+ 1399  sudo apt-get install v4l-utils
+ 1400  sydo apt autoremovew
+ 1401  sydo apt autoremove
+ 1402  sudo apt autoremove
+ 1403  sudo apt remove openvswitch
+ 1404  cd /usr/
+ 1405  ls
+ 1406  cd share/
+ 1407  clear
+ 1408  ls
+ 1409  find . -name "*open*"
+ 1410  find . -name "*switch*"
+ 1411  cd
+ 1412  sudo apt-get remove openvswitch-switch
+ 1413  sudo apt autoremove
+ 1414  ps aux | grep ovs
+ 1415  cd ryu/ryu/app/
+ 1416  ls
+ 1417  ryu-manager --verbose simple_switch_13.py 
+ 1418  ifconfig
+ 1419  ryu-manager --verbose simple_switch_13.py 
+ 1420  cd
+ 1421  cd lg_sdn/lgryu/ryu/app/
+ 1422  ryu-manager --verbose simple_switch_13.py 
+ 1423  ifconfig
+ 1424  dc
+ 1425  cp
+ 1426  cd
+ 1427  sudo apt-get install pkg-config
+ 1428  ls
+ 1429  cd librealsense/
+ 1430  ls
+ 1431  cd examples/
+ 1432  ls
+ 1433  cd capture/
+ 1434  ls
+ 1435  cd ../../
+ 1436  cd wrappers/
+ 1437  ls
+ 1438  cd python/
+ 1439  clear
+ 1440  ls
+ 1441  cd examples/
+ 1442  ls
+ 1443  python3 opencv_viewer_example.py 
+ 1444  cd
+ 1445  cd librealsense/
+ 1446  cd
+ 1447  cd vcpkg/
+ 1448  ./bootstrap-vcpkg.sh
+ 1449  ./vcpkg integrate install
+ 1450  ./vcpkg install realsense2
+ 1451  cd
+ 1452  cd li
+ 1453  cd librealsense/
+ 1454  clear
+ 1455  ls
+ 1456  mkdir bui
+ 1457  ls
+ 1458  rm -f bui/
+ 1459  rm -rf bui/
+ 1460  mkdir build
+ 1461  cd build/
+ 1462  ls
+ 1463  cmake .. -DBUILD_EXAMPLES=true -DBUILD_WITH_OPENMP=false -DHWM_OVER_XU=false
+ 1464  ls
+ 1465  cd ../
+ 1466  cd build/
+ 1467  cmake ../ -DBUILD_PYTHON_BINDINGS=bool:true
+ 1468  cd ../wrappers/python/examples/
+ 1469  python3 opencv_viewer_example.py 
+ 1470  python opencv_viewer_example.py 
+ 1471  cd
+ 1472  cd librealsense/
+ 1473  ls
+ 1474  cd examples/
+ 1475  ls
+ 1476  cd capture/
+ 1477  ls
+ 1478  make
+ 1479  cmake
+ 1480  cmake .. -DBUILD_EXAMPLES=true
+ 1481  ls
+ 1482  cd capture/
+ 1483  ls
+ 1484  cd CMakeFiles/
+ 1485  ls
+ 1486  cd ../../
+ 1487  ls
+ 1488  rm -rf align/ callback/ pose/ software-device/ align-advanced/ capture/ measure/ pose-and-image/ record-playback/ tracking-and-depth/
+ 1489  clear
+ 1490  ls
+ 1491  rm -rf ar-advanced/ ar-basic/ CMakeFiles/ gl/ motion/ pose-predict/ save-to-disk/ hdr/ post-processing/ sensor-control/ trajectory/ pointcloud/ hello-realsense/ C/
+ 1492  ls
+ 1493  rm -rf CMakeCache.txt pose-apriltag/ multicam/
+ 1494  clear
+ 1495  ls
+ 1496  rm -rf cmake_install.cmake compile_commands.json Makefile 
+ 1497  clear
+ 1498  ls
+ 1499  cd../../
+ 1500  cd ../../
+ 1501  cd build/
+ 1502  ls
+ 1503  cd ../
+ 1504  ls
+ 1505  cd build/
+ 1506  make
+ 1507  ls
+ 1508  cd ../
+ 1509  ls
+ 1510  rm -rf build/
+ 1511  make
+ 1512  mkdir build
+ 1513  cd build/
+ 1514  cmake .. -DBUILD_EXAMPLES=true -DBUILD_WITH_OPENMP=false -DHWM_OVER_XU=false
+ 1515  cd
+ 1516  audo apt-get install freeglut3-dev
+ 1517  sudo apt-get install freeglut3-dev
+ 1518  cd librealsense/build/
+ 1519  cmake .. -DBUILD_EXAMPLES=true -DBUILD_WITH_OPENMP=false -DHWM_OVER_XU=false
+ 1520  cd
+ 1521  sudo apt-get install libgl1-mesa-dev
+ 1522  sudo apt-get install libegl1-mesa-dev
+ 1523  sudo apt-get isntall mesa-common-dev
+ 1524  sudo apt-get install mesa-common-dev
+ 1525  cd librealsense/build/
+ 1526  cmake .. -DBUILD_EXAMPLES=true -DBUILD_WITH_OPENMP=false -DHWM_OVER_XU=false
+ 1527  cd
+ 1528  docker pull librealsense/librealsense
+ 1529  sudo docker pull librealsense/librealsense
+ 1530  docker run -it --rm     -v /dev:/dev     --device-cgroup-rule "c 81:* rmw"     --device-cgroup-rule "c 189:* rmw"     librealsense/librealsense rs-depth
+ 1531  ls
+ 1532  cp dump_flow.sh rs_docker.sh
+ 1533  vim rs_docker.sh 
+ 1534  ./rs_docker.sh 
+ 1535  cd
+ 1536  sudo docker container ls -a
+ 1537  sudo docker start focal_u
+ 1538  sudo docker attach focal_ui
+ 1539  sudo docker attach focal_u
+ 1540  cd vcpkg/
+ 1541  ls
+ 1542  ./vcpkg install realsense2
+ 1543  cd
+ 1544  cd librealsense/
+ 1545  git log
+ 1546  cd
+ 1547  cd Downloads/
+ 1548  mv librealsense-master.zip ~/librealsense/
+ 1549  cd
+ 1550  cd librealsense/
+ 1551  unzip librealsense-master.zip 
+ 1552  ls
+ 1553  cd
+ 1554  sudo apt-get install libssl-dev
+ 1555  sudo apt-get install libusb-1.0-0-dev libudev-dev pkg-config libgtk-3-dev
+ 1556  sudo apt-get install libglfw3-dev libgl1-mesa-dev libglu1-mesa-dev
+ 1557  ls
+ 1558  cd librealsense/
+ 1559  cd scripts/
+ 1560  clear
+ 1561  ls
+ 1562  ./setup_udev_rules.sh 
+ 1563  vim setup_udev_rules.sh 
+ 1564  ./setup_udev_rules.sh 
+ 1565  ./setup_udev_rules.sh --uninstall
+ 1566  ./setup_udev_rules.sh
+ 1567  ./scripts/patch-realsense-ubuntu-lts.sh
+ 1568  ./patch-realsense-ubuntu-lts.sh
+ 1569  ./patch-realsense-ubuntu-lts.sh 
+ 1570  sudo ./patch-realsense-ubuntu-lts.sh 
+ 1571  vim patch-realsense-ubuntu-lts.sh 
+ 1572  cd../
+ 1573  cd ../
+ 1574  sudo ./scripts/patch-realsense-ubuntu-lts.sh
+ 1575  uname -r
+ 1576  cd scripts/
+ 1577  ls
+ 1578  clear
+ 1579  vim patch-realsense-ubuntu-odroid.sh 
+ 1580  exit
+ 1581  cd
+ 1582  sudo docker ps -a
+ 1583  sudo docker container ls -a
+ 1584  clear
+ 1585  sudo docker container ls -a
+ 1586  sudo docker images
+ 1587  vim rs_docker.sh 
+ 1588  ./rs_docker.sh 
+ 1589  vim rs_docker.sh 
+ 1590  ./rs_docker.sh 
+ 1591  vim rs_docker.sh 
+ 1592  ./rs_docker.sh 
+ 1593  cd librealsense/
+ 1594  ls
+ 1595  cd dock
+ 1596  cd scripts/
+ 1597  ls
+ 1598  cd Docker/
+ 1599  clear
+ 1600  ./build_image
+ 1601  ls
+ 1602  ./build_image.sh 
+ 1603  sudo ./build_image.sh 
+ 1604  exit
+ 1605  lsusb
+ 1606  cd c++_progream/
+ 1607  ls
+ 1608  vim cam.cpp
+ 1609  g++ cam.cpp -o cam
+ 1610  cd
+ 1611  sudo apt update
+ 1612  $ sudo apt install libopencv-dev python3-opencv
+ 1613  sudo apt install libopencv-dev python3-opencv
+ 1614  cd py_test/test/
+ 1615  vim cam.py 
+ 1616  python3 cam.py 
+ 1617  cd
+ 1618  pkg-config --modversion opencv
+ 1619  pkg-config --modversion openvswitch
+ 1620  pkg-config --modversion docker
+ 1621  cd py_test/test/
+ 1622  vim cam.py 
+ 1623  cd
+ 1624  clear
+ 1625  ps
+ 1626  ps -a
+ 1627  kill -9 85736
+ 1628  ps -a
+ 1629  kill -9 86054
+ 1630  ps -a
+ 1631  kill -9 86364
+ 1632  clear
+ 1633  rs-enumerate-devices
+ 1634  cd ryu/ryu/tests/
+ 1635  cd req_to_packet/
+ 1636  vim client.py 
+ 1637  python3 client.py 
+ 1638  cd ~/py_test/test/
+ 1639  vim bytes.py
+ 1640  python3 bytes.py 
+ 1641  vim bytes.py
+ 1642  python3 bytes.py 
+ 1643  vim bytes.py
+ 1644  python3 bytes.py 
+ 1645  cd ~/ryu/ryu/tests/req_to_packet/
+ 1646  vim client.py 
+ 1647  python3 client.py 
+ 1648  vim client.py 
+ 1649  cd ~/py_test/test/
+ 1650  vim bytes.py 
+ 1651  cd ~/ryu/ryu/tests/req_to_packet/
+ 1652  ls
+ 1653  cp client.py server.py ~/py_test/test/
+ 1654  exit
+ 1655  cd ssh_remote/
+ 1656  ls
+ 1657  ./odroid5.sh 
+ 1658  ./odroid4.sh 
+ 1659  cd ../
+ 1660  cd config/
+ 1661  ls
+ 1662  cd /etc/udev/rules.d/
+ 1663  ls
+ 1664  cd ~/librealsense/config/
+ 1665  cp 99-realsense-libusb.rules /etc/udev/rules.d/
+ 1666  sudo cp 99-realsense-libusb.rules /etc/udev/rules.d/
+ 1667  cd /etc/udev/rules.d/
+ 1668  ls
+ 1669  cd
+ 1670  cd librealsense/
+ 1671  ls
+ 1672  cd examples/
+ 1673  ls
+ 1674  cd capture/
+ 1675  ls
+ 1676  vim rs-capture.cpp 
+ 1677  cd
+ 1678  pip install opencv-python
+ 1679  pip install pyrealsense2
+ 1680  cd py_test/
+ 1681  ls
+ 1682  python yaml_reader.py 
+ 1683  cd test
+ 1684  vim depth.py
+ 1685  python depth.py 
+ 1686  python3 depth.py 
+ 1687  vim depth.py 
+ 1688  python3 depth.py 
+ 1689  vim depth.py 
+ 1690  python3 depth.py 
+ 1691  vim depth.py 
+ 1692  vim rs.py
+ 1693  python3 rs.py 
+ 1694  vim rs.py 
+ 1695  python3 rs.py 
+ 1696  vim rs.py 
+ 1697  python3 rs.py 
+ 1698  vim rs.py 
+ 1699  python3 rs.py 
+ 1700  vim rs.py 
+ 1701  cp rs.py depth_rs.py
+ 1702  vim depth_rs.py 
+ 1703  python3 depth_rs.py 
+ 1704  vim depth_rs.py 
+ 1705  python3 depth_rs.py 
+ 1706  vim depth_rs.py depth_test.py
+ 1707  ls
+ 1708  cp depth_rs.py depth_test.py
+ 1709  vim depth_test.py 
+ 1710  python3 depth_test.py 
+ 1711  vim depth_test.py 
+ 1712  clear
+ 1713  ll
+ 1714  vim real_depth.py
+ 1715  python3 real_depth.py 
+ 1716  vim real_depth.py 
+ 1717  python3 real_depth.py 
+ 1718  d
+ 1719  vim real_depth.py 
+ 1720  python3 real_depth.py 
+ 1721  vim real_depth.py 
+ 1722  python3 real_depth.py 
+ 1723  vim real_depth.py 
+ 1724  python3 real_depth.py 
+ 1725  vim real_depth.py 
+ 1726  python3 real_depth.py 
+ 1727  vim real_depth.py 
+ 1728  python3 real_depth.py 
+ 1729  vim real_depth.py 
+ 1730  python3 real_depth.py 
+ 1731  vim real_depth.py 
+ 1732  cd
+ 1733  pip install realsense_depth
+ 1734  find . -name "*realsense_depth*"
+ 1735  cd py_test/test/
+ 1736  python3 real_depth.py 
+ 1737  vim real_depth.py 
+ 1738  python3 real_depth.py 
+ 1739  vim real_depth.py 
+ 1740  cp real_depth.py real_color.py
+ 1741  vim real_color.py 
+ 1742  python3 real_color.py 
+ 1743  vim real_
+ 1744  vim real_color.py 
+ 1745  vim real_
+ 1746  vim real_color.py 
+ 1747  python3 real_color.py 
+ 1748  vim real_color.py 
+ 1749  python3 real_color.py 
+ 1750  vim real_color.py 
+ 1751  python3 real_color.py 
+ 1752  vim real_color.py 
+ 1753  python3 real_color.py 
+ 1754  cd
+ 1755  cd py_test/test/
+ 1756  ls
+ 1757  clear
+ 1758  ll
+ 1759  vim client.py 
+ 1760  vim real_color.py 
+ 1761  cp real_color.py client_color.py
+ 1762  vim real_color.py 
+ 1763  vim client_color.py 
+ 1764  cp real_color.py server_color.py
+ 1765  vim server_color.py 
+ 1766  python3 client_color.py 
+ 1767  vim client.py 
+ 1768  vim client_color.py 
+ 1769  python3 client_color.py 
+ 1770  vim client_color.py 
+ 1771  python3 client_color.py 
+ 1772  vim client_color.py 
+ 1773  python3 client_color.py 
+ 1774  vim client_color.py 
+ 1775  cp client_color.py beta_client_color.py
+ 1776  vim beta_client_color.py 
+ 1777  rm -rf beta_client_color.py 
+ 1778  vim client_color.py 
+ 1779  python3 client_color.py 
+ 1780  vim client_color.py 
+ 1781  python3 client_color.py 
+ 1782  vim client_color.py 
+ 1783  python3 client_color.py 
+ 1784  vim client_color.py 
+ 1785  python3 client_color.py 
+ 1786  vim client_color.py 
+ 1787  python3 client_color.py 
+ 1788  vim client_color.py 
+ 1789  python3 client_color.py 
+ 1790  vim client_color.py 
+ 1791  python3 client_color.py 
+ 1792  vim client_color.py 
+ 1793  python3 client_color.py 
+ 1794  vim real_color.py 
+ 1795  python3 real_color.py 
+ 1796  vim real_color.py 
+ 1797  python3 real_color.py 
+ 1798  vim real_color.py 
+ 1799  python3 client_color.py 
+ 1800  vim real_color.py 
+ 1801  python3 client_color.py 
+ 1802  vim real_color.py 
+ 1803  vim client_color.py 
+ 1804  python3 client_color.py 
+ 1805  vim client_color.py 
+ 1806  python3 client_color.py 
+ 1807  vim client_color.py 
+ 1808  python3 client_color.py 
+ 1809  vim client_color.py 
+ 1810  python3 client_color.py 
+ 1811  vim client_color.py 
+ 1812  python3 client_color.py 
+ 1813  vim client_color.py 
+ 1814  python3 client_color.py 
+ 1815  vim client_color.py 
+ 1816  python3 client_color.py 
+ 1817  vim client_color.py 
+ 1818  python3 client_color.py 
+ 1819  vim client_color.py 
+ 1820  python3 client_color.py 
+ 1821  vim client_color.py 
+ 1822  python3 client_color.py 
+ 1823  vim client_color.py 
+ 1824  python3 client_color.py 
+ 1825  vim client_color.py 
+ 1826  python3 client_color.py 
+ 1827  vim client_color.py 
+ 1828  python3 client_color.py 
+ 1829  vim client_color.py 
+ 1830  python3 client_color.py 
+ 1831  vim client_color.py 
+ 1832  python3 client_color.py 
+ 1833  vim client_color.py 
+ 1834  cd ..
+ 1835  git init
+ 1836  git log
+ 1837  git add *
+ 1838  git commit "python test"
+ 1839  git commit -m "python test"
+ 1840  git log
+ 1841  cd test/
+ 1842  ls
+ 1843  vim client_color.py 
+ 1844  cd ../
+ 1845  git commit -am "remove transmit thread"
+ 1846  git log
+ 1847  cd test/
+ 1848  ls
+ 1849  python3 client_color.py 
+ 1850  vim client_color.py 
+ 1851  python3 client_color.py 
+ 1852  history
+ 1853  vim py_history.txt
+ 1854  touch py_history.txt
+ 1855  history > py_history.txt 
+ 1856  vim py_history.txt 
+ 1857  ls
+ 1858  python3 real_color.py 
+ 1859  python3 client_color.py 
+ 1860  python3 server_color.py 
+ 1861  vim server_color.py 
+ 1862  cp server_color.py beta_server_color.py
+ 1863  rm -f beta_server_color.py 
+ 1864  vim server_color.py 
+ 1865  python3 server
+ 1866  python3 server_color.py 
+ 1867  vim server_color.py 
+ 1868  python3 server_color.py 
+ 1869  vim server_color.py 
+ 1870  python3 server_color.py 
+ 1871  vim server_color.py 
+ 1872  python3 server_color.py 
+ 1873  vim server_color.py 
+ 1874  python3 server_color.py 
+ 1875  vim server_color.py 
+ 1876  python3 server_color.py 
+ 1877  vim server_color.py 
+ 1878  python3 server_color.py 
+ 1879  vim server_color.py 
+ 1880  python3 server_color.py 
+ 1881  vim server_color.py 
+ 1882  python3 server_color.py 
+ 1883  vim server_color.py 
+ 1884  python3 server_color.py 
+ 1885  vim server_color.py 
+ 1886  python3 server_color.py 
+ 1887  vim server_color.py 
+ 1888  python3 server_color.py 
+ 1889  vim server_color.py 
+ 1890  python3 server_color.py 
+ 1891  vim server_color.py 
+ 1892  python3 server_color.py 
+ 1893  vim server_color.py 
+ 1894  python3 server_color.py 
+ 1895  vim server_color.py 
+ 1896  python3 server_color.py 
+ 1897  vim server_color.py 
+ 1898  python3 server_color.py 
+ 1899  vim server_color.py 
+ 1900  python3 server_color.py 
+ 1901  vim server_color.py 
+ 1902  python3 server_color.py 
+ 1903  vim server_color.py 
+ 1904  python3 server_color.py 
+ 1905  vim server_color.py 
+ 1906  python3 server_color.py 
+ 1907  vim server_color.py 
+ 1908  python3 server_color.py 
+ 1909  cd
+ 1910  git clone https://github.com/pjreddie/darknet.git
+ 1911  cd darknet/
+ 1912  ls
+ 1913  cd examples/
+ 1914  ls
+ 1915  python3 detector.py 
+ 1916  vim detector
+ 1917  vim detector.
+ 1918  vim detector.py 
+ 1919  python3 detector.py 
+ 1920  vim detector.py 
+ 1921  cd
+ 1922  pip install darknet
+ 1923  pip install darknetpy
+ 1924  cd darknet/examples/
+ 1925  l
+ 1926  python3 detector.py 
+ 1927  cd ../
+ 1928  ls
+ 1929  cd cfg
+ 1930  ls
+ 1931  cd ../
+ 1932  find . -name "weight*"
+ 1933  find . -name "*weight*"
+ 1934  find . -name "*weights*"
+ 1935  make
+ 1936  ./darknet 
+ 1937  ./darknet -nogpu imagenet test cfg/alexnet.cfg alexnet.weights
+ 1938  ./darknet imtest data/eagle.jpg
+ 1939  ls
+ 1940  vim Makefile 
+ 1941  make
+ 1942  vim Makefile 
+ 1943  make
+ 1944  vim Makefile 
+ 1945  ./darknet data/eagle.jpg
+ 1946  cd
+ 1947  pip install tensorflow-gpu==2.3.0rc0
+ 1948  pip install tensorflow-gpu==2.3.0
+ 1949  pip remove tensorflow-gpu==2.3.0
+ 1950  pip uninstall tensorflow-gpu==2.3.0
+ 1951  python3
+ 1952  cd py_test/test/
+ 1953  clear
+ 1954  wget https://pjreddie.com/media/files/yolov3-tiny.weights
+ 1955  wget https://pjreddie.com/media/files/yolov3.weights
+ 1956  cp real_color.py real_darknet.py
+ 1957  vim real_darknet.py 
+ 1958  ls
+ 1959  ll
+ 1960  ll | grep yolo
+ 1961  vim real_darknet.py 
+ 1962  python3 real_darknet.py 
+ 1963  vim real_darknet.py 
+ 1964  python3 real_darknet.py 
+ 1965  vim real_darknet.py 
+ 1966  python3 real_darknet.py 
+ 1967  vim real_darknet.py 
+ 1968  vim server_color.py 
+ 1969  cd ../
+ 1970  git status
+ 1971  git add *
+ 1972  git commit -am "add darknet"
+ 1973  git log
+ 1974  cd test/
+ 1975  ls
+ 1976  vim server_color.py 
+ 1977  ls
+ 1978  cd ~/darknet/cfg/
+ 1979  ls
+ 1980  cp yolov3-tiny.cfg ~/py_test/test/
+ 1981  cd ~/py_test/test/
+ 1982  vim real_darknet.py 
+ 1983  ls
+ 1984  vim yolov3-tiny.cfg 
+ 1985  vim real_darknet.py 
+ 1986  python3 real_darknet.py 
+ 1987  vim server_color.py 
+ 1988  cd ../
+ 1989  git status
+ 1990  git add *
+ 1991  git commit -am "add yolov3 & tiny"
+ 1992  git log
+ 1993  cd
+ 1994  cd ssh_remote/
+ 1995  ./odroid1.sh 
+ 1996  ./odroid4.sh 
+ 1997  ./odroid2.sh 
+ 1998  ls
+ 1999  lsusb
+ 2000  clear
+ 2001  ls
+ 2002  cd py_test/
+ 2003  ls
+ 2004  cd test/
+ 2005  ls
+ 2006  vim server_color.py 
+ 2007  vim realsense.txt 
+ 2008  cd
+ 2009  python --version
+ 2010  python3 --version
+ 2011  cd py_test/test/
+ 2012  vim realsense.txt 
+ 2013  cd
+ 2014  ls
+ 2015  cd librealsense/
+ 2016  ls
+ 2017  cd
+ 2018  history
+ 2019  ls
+ 2020  cd py_test/test/
+ 2021  vim realsense.txt 
+ 2022  vim client_color.py 
+ 2023  vim server_color.py 
+ 2024  vim realsense.txt 
+ 2025  vim client_color.py 
+ 2026  vim realsense.txt 
+ 2027  cd
+ 2028  ls
+ 2029  cd py_test/
+ 2030  ls
+ 2031  cd test/
+ 2032  ls
+ 2033  touch history_8-26.txt
+ 2034  history >> history_8-26.txt 
