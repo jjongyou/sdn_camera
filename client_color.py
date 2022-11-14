@@ -70,7 +70,7 @@ try:
 
         # Convert images to numpy arrays
         color_image = np.asanyarray(color_frame.get_data())
-        # cv2.imshow('color_depth', color_image)
+        cv2.imshow('color_depth', color_image)
         # print(type(color_image))
         # print(len(color_image))
         # print(type(color_image.tobytes()))

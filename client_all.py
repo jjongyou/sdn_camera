@@ -4,13 +4,14 @@ import socket
 import time
 
 # Server IP and PORT
-UDP_IP = "127.0.0.1"
-# UDP_IP = "10.0.0.2"
-UDP_PORT = 8080
+IP = "127.0.0.1"
+# IP = "10.0.0.2"
+PORT = 8080
 
 try:
-    # Make UDP Socket
-    sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+    # Make TCP Socket
+    sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    sock.connect((IP, PORT))
 
     # Capture Camera
     # Maybe 12 is color
@@ -20,7 +21,6 @@ try:
     cap = cv2.VideoCapture(4, cv2.CAP_V4L2)
 
     while True:
-        data = 0
         if not cap.isOpened():
             print("Not Opened")
             continue
@@ -34,11 +34,10 @@ try:
 
         # print("send: ",time.time())
         for i in range(20):
-            sock.sendto(image_to_string[i*46080:(i+1)*46080], (UDP_IP, UDP_PORT))
-            data += len(image_to_string[i*46080:(i+1)*46080])
+            start = time.time()
+            sock.send(image_to_string[i*46080:(i+1)*46080])
+            print("elapsed :",time.time() - start)
 
-        print(data)
-        # num = input()
         if cv2.waitKey(1) & 0xFF == ord('q'):
             break
 
