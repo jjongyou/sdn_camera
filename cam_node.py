@@ -4,11 +4,14 @@ import socket
 import time
 
 # Server IP and PORT
-IP = "10.0.0.103"
+# IP = "10.0.0.103"
+# PORT = 8080
+IP = "127.0.0.1"
 PORT = 8080
 
 try:
-    cap = cv2.VideoCapture(12, cv2.CAP_V4L2)
+    cap = cv2.VideoCapture(4, cv2.CAP_V4L2)
+    # cap = cv2.VideoCapture(12, cv2.CAP_V4L2)
 
     sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     sock.connect((IP, PORT))

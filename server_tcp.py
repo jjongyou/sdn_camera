@@ -4,8 +4,8 @@ import socket
 import time
 
 # Setting
-# IP = "127.0.0.1"
-IP = "192.168.0.2"
+IP = "127.0.0.1"
+# IP = "192.168.0.2"
 # IP = "0.0.0.0"
 # PORT = 8321
 PORT = 8080
@@ -20,26 +20,36 @@ sock.bind((IP, PORT))
 sock.listen()
 
 try:
+    server, addr = sock.accept()
+    print("[CONNECT] ", addr[0],":",addr[1])
     while True:
         image_data = b''
-        server, addr = sock.accept()
-        start = 0
+        start = time.time()
+        step = MAX_BUF
         while True:
        
-            data = server.recv(MAX_BUF)
+            data = server.recv(step)
             if not data:
-                # print("Disconnected by " + addr[0],":",addr[1])
+                print("No Data: from " + addr[0],":",addr[1])
                 break
             image_data += data
-            print(len(image_data))
-            print(type(image_data))
+            # print(len(image_data))
+            # print(type(image_data))
 
             if len(image_data) == IMAGE_SIZE:
+                print("image received :", time.time() - start)
                 image_frame = np.frombuffer(image_data, dtype=np.uint8)
                 color_image = image_frame.reshape(480, 640, 3)
                 cv2.imshow('after', color_image)
-                image_data = b''
-                # break
+                break
+            elif len(image_data) < IMAGE_SIZE:
+                step = IMAGE_SIZE - len(image_data)
+                if step > MAX_BUF:
+                    step = MAX_BUF
+            elif len(image_data) > IMAGE_SIZE:
+                print("[ERROR] Size is big")
+                break
+
 
 
         if cv2.waitKey(1) & 0xFF == ord('q'):
