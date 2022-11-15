@@ -5,16 +5,16 @@ import time
 
 # Server IP and PORT
 IP = "127.0.0.1"
-# IP = "10.0.0.2"
+# IP = "10.0.0.100"
 PORT = 8080
 
 try:
     # Capture Camera
-    # Maybe 12 is color
+    # 12 is color on Odroid
     # cap = cv2.VideoCapture(12, cv2.CAP_V4L2)
-    # Maybe 8 is depth
+    # 8 is depth on Odroid
     # cap = cv2.VideoCapture(8, cv2.CAP_V4L2)
-    # Desktop Color Camera Number
+    # 4 is color on Desktop
     cap = cv2.VideoCapture(4, cv2.CAP_V4L2)
 
     while True:
@@ -28,7 +28,7 @@ try:
         if not ret:
             continue
 
-        cv2.imshow('before', frame)
+        # cv2.imshow('before', frame)
         flat_frame = frame.flatten()
         image_to_string = flat_frame.tobytes()
 

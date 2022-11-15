@@ -5,9 +5,7 @@ import time
 
 # Setting
 # IP = "127.0.0.1"
-IP = "192.168.0.4"
-# IP = "0.0.0.0"
-# PORT = 8321
+IP = "192.168.0.7"
 PORT = 8080
 MAX_BUF = 46080
 IMAGE_SIZE = 921600
@@ -19,26 +17,27 @@ try:
         try:
             sock.connect((IP, PORT))
         except ConnectionRefusedError as e:
-            print(e)
+            print("[ERROR] ", e)
             continue
-        msg = "True"
-        sock.sendall(msg.encode(encoding='utf-8'))
+
+        start = time.time()
+
         while True:       
             data = sock.recv(MAX_BUF)
             if not data:
-                # print("Disconnected by " + addr[0],":",addr[1])
+                print("[ERROR] Disconnected by " + addr[0],":",addr[1])
                 break
             image_data += data
             # print(len(image_data))
             # print(type(image_data))
 
             if len(image_data) == IMAGE_SIZE:
-                print(len(image_data))
-                print(type(image_data))
+                print("[SDN] image received :", time.time() - start)
                 image_frame = np.frombuffer(image_data, dtype=np.uint8)
                 color_image = image_frame.reshape(480, 640, 3)
-                cv2.imshow('after', color_image)
+                cv2.imshow('desktop', color_image)
                 # sock.close()
+                start = time.time()
                 break
 
 
