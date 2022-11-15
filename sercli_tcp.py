@@ -6,27 +6,34 @@ import time
 # Setting
 # IP = "127.0.0.1"
 IP = "192.168.0.7"
-PORT = 8080
+# PORT = 8080
+PORT = 8321
 MAX_BUF = 46080
 IMAGE_SIZE = 921600
 
 try:
+    sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    try:
+        sock.connect((IP, PORT))
+    except ConnectionRefusedError as e:
+        print("[ERROR] ", e)
+
     while True:
         image_data = b''
-        sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        try:
-            sock.connect((IP, PORT))
-        except ConnectionRefusedError as e:
-            print("[ERROR] ", e)
-            continue
+        # sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        # try:
+        #     sock.connect((IP, PORT))
+        # except ConnectionRefusedError as e:
+        #     print("[ERROR] ", e)
+        #     continue
 
         start = time.time()
 
         while True:       
             data = sock.recv(MAX_BUF)
             if not data:
-                print("[ERROR] Disconnected by " + addr[0],":",addr[1])
-                break
+                continue
+                # break
             image_data += data
             # print(len(image_data))
             # print(type(image_data))
