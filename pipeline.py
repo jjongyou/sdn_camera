@@ -24,6 +24,7 @@ to_sdn_sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 try:
     sdn_server, sdn_addr = from_sdn_sock.accept()
     print("[CONNECT] ", sdn_addr[0],":",sdn_addr[1])
+    to_sdn_sock.connect((SDN_IP_TO, SDN_PORT_TO))
     while True:
         start = time.time()
         image_data = b''
